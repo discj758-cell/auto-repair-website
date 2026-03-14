@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Book Appointment | Premium Auto Service</title>
+    <meta name="description" content="Contact Premium Auto Service for free estimates and appointments. Call (555) 123-4567 or book online. Located at 123 Main Street, Your City.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <span class="logo-text">PREMIUM</span>
+                <span class="logo-sub">AUTO SERVICE</span>
+            </div>
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <a href="tel:+15551234567" class="btn-primary header-cta">📞 (555) 123-4567</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get a free estimate or book your appointment today</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Request a Free Estimate</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                    
+                    <!-- Formspree Integration (Replace YOUR_FORM_ID) -->
+                    <form action="https://formspree.io/f/xjgaonza" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vehicle">Vehicle (Year, Make, Model) *</label>
+                            <input type="text" id="vehicle" name="vehicle" required placeholder="2020 Toyota Camry">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="Brake Repair">Brake Repair</option>
+                                <option value="Engine Diagnostics">Engine Diagnostics</option>
+                                <option value="Oil Change">Oil Change</option>
+                                <option value="Transmission">Transmission</option>
+                                <option value="A/C & Heating">A/C & Heating</option>
+                                <option value="Electrical">Electrical</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Describe the Problem</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Check engine light is on, car is making strange noise..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferred-date">Preferred Date</label>
+                            <input type="date" id="preferred-date" name="preferred_date">
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-large btn-full">Submit Request</button>
+                        
+                        <p class="form-note">* Required fields. We respect your privacy and will never share your information.</p>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2>Get In Touch</h2>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>123 Main Street<br>Your City, State 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                            <p class="hours">Mon-Fri: 8AM - 6PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:service@premiumauto.com">service@premiumauto.com</a></p>
+                            <p class="hours">Response within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="emergency-box">
+                        <h3>🚨 Need Emergency Service?</h3>
+                        <p>We offer same-day appointments for urgent repairs. Call us now!</p>
+                        <a href="tel:+15551234567" class="btn-primary">Call Now</a>
+                    </div>
+
+                    <div class="map-box">
+                        <h3>Our Location</h3>
+                        <!-- Google Maps Embed (Replace with your actual location) -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1622036400000!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Great for LLMo) -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How much does a brake job cost?</h3>
+                    <p>Brake pad replacement starts at $149 per axle. The final cost depends on your vehicle make/model and whether rotors need resurfacing or replacement. We provide free estimates before any work begins.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does an oil change take?</h3>
+                    <p>Most oil changes are completed in 30-45 minutes. We recommend making an appointment to minimize wait time, but we also accept walk-ins when available.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer a warranty on repairs?</h3>
+                    <p>Yes! We offer a 2-year/24,000-mile warranty on most repairs. Some parts may have manufacturer warranties that extend beyond this. Ask your service advisor for details.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What forms of payment do you accept?</h3>
+                    <p>We accept cash, all major credit cards (Visa, MasterCard, American Express, Discover), debit cards, and check. We also offer financing options for larger repairs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide a shuttle service?</h3>
+                    <p>Yes! We offer complimentary shuttle service within a 5-mile radius for customers who need transportation while their vehicle is being serviced.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I know if I need brake service?</h3>
+                    <p>Common signs include squeaking/grinding noises, vibrating brake pedal, brake warning light, car pulling to one side when braking, or a soft/spongy brake pedal. Get a free inspection if you notice any of these.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Schedule Your Service?</h2>
+            <p>Call now or fill out the form above for a free estimate</p>
+            <a href="tel:+15551234567" class="btn-primary btn-large">📞 Call (555) 123-4567</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Premium Auto Service</h4>
+                    <p>Your trusted neighborhood auto repair shop. ASE certified mechanics with over 15 years of experience.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#brakes">Brake Repair</a></li>
+                        <li><a href="services.html#engine">Engine Diagnostics</a></li>
+                        <li><a href="services.html#oil">Oil Changes</a></li>
+                        <li><a href="services.html#transmission">Transmission</a></li>
+                        <li><a href="services.html#ac">A/C & Heating</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📍 123 Main Street, Your City, State 12345</li>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ service@premiumauto.com</li>
+                        <li>🕐 Mon-Fri: 8AM - 6PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Areas</h4>
+                    <p>Serving Your City and surrounding areas including Downtown, Westside, Eastside, North Hills, and South Valley.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premium Auto Service. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mobileNav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

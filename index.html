@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Auto Service | Trusted Mechanic in Your City</title>
+    <meta name="description" content="Certified auto repair shop offering brakes, engine diagnostics, oil changes & more. ASE certified mechanics. Same-day service available. Call now for free estimate!">
+    <meta name="keywords" content="auto repair, mechanic, brake repair, oil change, engine diagnostics, car repair near me">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- LLMo & Local SEO Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Premium Auto Service",
+      "image": "images/shop-exterior.jpg",
+      "url": "https://yourdomain.com",
+      "telephone": "+1-555-123-4567",
+      "email": "service@premiumauto.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street",
+        "addressLocality": "Your City",
+        "addressRegion": "State",
+        "postalCode": "12345",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.7128,
+        "longitude": -74.0060
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "287"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="site-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <span class="logo-text">PREMIUM</span>
+                <span class="logo-sub">AUTO SERVICE</span>
+            </div>
+            <nav class="desktop-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="tel:+15551234567" class="btn-primary header-cta">📞 (555) 123-4567</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Honest Mechanics.<br>Fair Prices.<br>Fixed Right the First Time.</h1>
+            <p class="hero-subtitle">ASE Certified Mechanics Serving Your Community for Over 15 Years</p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn-primary btn-large">Book Appointment</a>
+                <a href="services.html" class="btn-secondary btn-large">View Services</a>
+            </div>
+            <div class="trust-badges">
+                <span>✓ ASE Certified</span>
+                <span>✓ 2-Year Warranty</span>
+                <span>✓ Free Estimates</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <span class="trust-icon">⭐</span>
+                    <strong>4.9 Stars</strong>
+                    <p>on Google</p>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">🏆</span>
+                    <strong>15+ Years</strong>
+                    <p>Experience</p>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">🔧</span>
+                    <strong>5,000+</strong>
+                    <p>Cars Fixed</p>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <strong>100%</strong>
+                    <p>Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <h2 class="section-title">Our Expert Services</h2>
+            <p class="section-subtitle">Professional auto repair for all makes and models</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🛑</div>
+                    <h3>Brake Repair</h3>
+                    <p>Complete brake inspection, pad replacement, rotor resurfacing, and brake fluid service.</p>
+                    <a href="services.html#brakes" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Engine Diagnostics</h3>
+                    <p>Check engine light? We use advanced OBDII scanners to diagnose and fix issues fast.</p>
+                    <a href="services.html#engine" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛢️</div>
+                    <h3>Oil Changes</h3>
+                    <p>Full synthetic, synthetic blend, and conventional oil changes with multi-point inspection.</p>
+                    <a href="services.html#oil" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Transmission</h3>
+                    <p>Transmission fluid service, repairs, and complete rebuilds for automatic and manual.</p>
+                    <a href="services.html#transmission" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">❄️</div>
+                    <h3>A/C & Heating</h3>
+                    <p>AC recharge, heater core repair, climate control diagnostics and repair services.</p>
+                    <a href="services.html#ac" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔋</div>
+                    <h3>Electrical</h3>
+                    <p>Battery testing, alternator repair, starter replacement, and electrical diagnostics.</p>
+                    <a href="services.html#electrical" class="service-link">Learn More →</a>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="services.html" class="btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-content">
+                    <h2 class="section-title">Why Choose Premium Auto Service?</h2>
+                    <ul class="why-list">
+                        <li><span class="check">✓</span> <strong>ASE Certified Mechanics</strong> - Trained and certified professionals</li>
+                        <li><span class="check">✓</span> <strong>Transparent Pricing</strong> - No hidden fees, upfront estimates</li>
+                        <li><span class="check">✓</span> <strong>2-Year Warranty</strong> - Peace of mind on all repairs</li>
+                        <li><span class="check">✓</span> <strong>Same-Day Service</strong> - Most repairs completed same day</li>
+                        <li><span class="check">✓</span> <strong>Free Shuttle Service</strong> - We get you where you need to go</li>
+                        <li><span class="check">✓</span> <strong>Comfortable Waiting Area</strong> - WiFi, coffee, and TV</li>
+                    </ul>
+                    <a href="contact.html" class="btn-primary">Schedule Service</a>
+                </div>
+                <div class="why-image">
+                    <img src="images/mechanic-working.jpg" alt="Professional mechanic working on car engine">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Best shop in town! They fixed my transmission in half the time of the dealer and saved me $500. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <strong>John D.</strong>
+                        <span>Toyota Camry Owner</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Honest pricing and no upselling. They showed me exactly what was wrong and only fixed what was needed. Will be back!"</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah M.</strong>
+                        <span>Honda Civic Owner</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Fast, professional, and fair. My car runs like new after their engine diagnostics. The free shuttle was a nice touch too!"</p>
+                    <div class="testimonial-author">
+                        <strong>Mike R.</strong>
+                        <span>Ford F-150 Owner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Your Car Fixed?</h2>
+            <p>Call now for a free estimate or book your appointment online</p>
+            <div class="cta-buttons">
+                <a href="tel:+15551234567" class="btn-primary btn-large">📞 Call (555) 123-4567</a>
+                <a href="contact.html" class="btn-secondary btn-large">Book Online</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Premium Auto Service</h4>
+                    <p>Your trusted neighborhood auto repair shop. ASE certified mechanics with over 15 years of experience.</p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Google</a>
+                        <a href="#">Yelp</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#brakes">Brake Repair</a></li>
+                        <li><a href="services.html#engine">Engine Diagnostics</a></li>
+                        <li><a href="services.html#oil">Oil Changes</a></li>
+                        <li><a href="services.html#transmission">Transmission</a></li>
+                        <li><a href="services.html#ac">A/C & Heating</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📍 123 Main Street, Your City, State 12345</li>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ service@premiumauto.com</li>
+                        <li>🕐 Mon-Fri: 8AM - 6PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Areas</h4>
+                    <p>Serving Your City and surrounding areas including Downtown, Westside, Eastside, North Hills, and South Valley.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premium Auto Service. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mobileNav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

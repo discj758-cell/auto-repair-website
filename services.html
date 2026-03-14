@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Repair Services | Brake, Engine, Oil Change | Premium Auto Service</title>
+    <meta name="description" content="Complete auto repair services: brake repair, engine diagnostics, oil changes, transmission, A/C repair. ASE certified mechanics. Free estimates. Call now!">
+    <meta name="keywords" content="brake repair, engine diagnostics, oil change, transmission repair, auto repair services">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Service Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Premium Auto Service",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Auto Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Brake Repair",
+              "description": "Complete brake inspection and repair services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Engine Diagnostics",
+              "description": "Check engine light diagnosis and repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oil Change",
+              "description": "Full synthetic and conventional oil changes"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header (Same as index.html) -->
+    <header class="site-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <span class="logo-text">PREMIUM</span>
+                <span class="logo-sub">AUTO SERVICE</span>
+            </div>
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="tel:+15551234567" class="btn-primary header-cta">📞 (555) 123-4567</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Professional auto repair for all makes and models</p>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            
+            <!-- Brake Repair -->
+            <div class="service-section" id="brakes">
+                <div class="service-content">
+                    <h2>🛑 Brake Repair & Replacement</h2>
+                    <p class="service-intro">Your brakes are the most important safety system in your vehicle. Don't wait until it's too late.</p>
+                    
+                    <h3>Our Brake Services Include:</h3>
+                    <ul class="service-list">
+                        <li>Complete brake inspection and diagnosis</li>
+                        <li>Brake pad replacement (front and rear)</li>
+                        <li>Brake rotor resurfacing or replacement</li>
+                        <li>Brake caliper repair and replacement</li>
+                        <li>Brake fluid flush and exchange</li>
+                        <li>ABS system diagnostics and repair</li>
+                    </ul>
+
+                    <h3>Warning Signs You Need Brake Service:</h3>
+                    <ul class="service-list warning-signs">
+                        <li>⚠️ Squeaking or grinding noises when braking</li>
+                        <li>⚠️ Vibrating or pulsating brake pedal</li>
+                        <li>⚠️ Brake warning light on dashboard</li>
+                        <li>⚠️ Car pulls to one side when braking</li>
+                        <li>⚠️ Soft or spongy brake pedal</li>
+                    </ul>
+
+                    <div class="service-pricing">
+                        <h3>Starting At:</h3>
+                        <p class="price">Brake Pad Replacement: $149/axle</p>
+                        <p class="price-note">*Price varies by vehicle. Free estimate provided.</p>
+                    </div>
+
+                    <a href="contact.html" class="btn-primary">Get Brake Estimate</a>
+                </div>
+                <div class="service-image">
+                    <img src="images/brake-repair.jpg" alt="Brake repair service - brake discs and calipers">
+                </div>
+            </div>
+
+            <!-- Engine Diagnostics -->
+            <div class="service-section reverse" id="engine">
+                <div class="service-content">
+                    <h2>⚙️ Engine Diagnostics & Repair</h2>
+                    <p class="service-intro">Check engine light on? Our advanced diagnostic equipment finds the problem fast.</p>
+                    
+                    <h3>Our Engine Services Include:</h3>
+                    <ul class="service-list">
+                        <li>Check engine light diagnosis (OBDII scanning)</li>
+                        <li>Engine performance diagnostics</li>
+                        <li>Fuel system cleaning and repair</li>
+                        <li>Ignition system repair (spark plugs, coils)</li>
+                        <li>Timing belt/chain replacement</li>
+                        <li>Engine tune-ups</li>
+                    </ul>
+
+                    <h3>Common Engine Problems We Fix:</h3>
+                    <ul class="service-list warning-signs">
+                        <li>⚠️ Check engine light illuminated</li>
+                        <li>⚠️ Rough idle or stalling</li>
+                        <li>⚠️ Poor fuel economy</li>
+                        <li>⚠️ Loss of power or acceleration</li>
+                        <li>⚠️ Unusual engine noises</li>
+                    </ul>
+
+                    <div class="service-pricing">
+                        <h3>Starting At:</h3>
+                        <p class="price">Diagnostic Scan: $89 (Applied to repair)</p>
+                        <p class="price-note">*Diagnostic fee waived with repair.</p>
+                    </div>
+
+                    <a href="contact.html" class="btn-primary">Get Engine Diagnosis</a>
+                </div>
+                <div class="service-image">
+                    <img src="images/engine-diagnostics.jpg" alt="Engine diagnostics service - mechanic with laptop">
+                </div>
+            </div>
+
+            <!-- Oil Change -->
+            <div class="service-section" id="oil">
+                <div class="service-content">
+                    <h2>🛢️ Oil Changes & Lube Service</h2>
+                    <p class="service-intro">Regular oil changes are the cheapest way to extend your engine's life.</p>
+                    
+                    <h3>Our Oil Change Services Include:</h3>
+                    <ul class="service-list">
+                        <li>Conventional oil change</li>
+                        <li>Synthetic blend oil change</li>
+                        <li>Full synthetic oil change</li>
+                        <li>High-mileage oil change</li>
+                        <li>Oil filter replacement</li>
+                        <li>Multi-point vehicle inspection</li>
+                        <li>Fluid level check and top-off</li>
+                        <li>Tire pressure check</li>
+                    </ul>
+
+                    <h3>Oil Change Types:</h3>
+                    <div class="oil-types">
+                        <div class="oil-type">
+                            <h4>Conventional</h4>
+                            <p>Best for older vehicles</p>
+                            <span class="price-tag">$49</span>
+                        </div>
+                        <div class="oil-type">
+                            <h4>Synthetic Blend</h4>
+                            <p>Better protection</p>
+                            <span class="price-tag">$69</span>
+                        </div>
+                        <div class="oil-type featured">
+                            <h4>Full Synthetic</h4>
+                            <p>Maximum protection</p>
+                            <span class="price-tag">$89</span>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn-primary">Schedule Oil Change</a>
+                </div>
+                <div class="service-image">
+                    <img src="images/oil-change.jpg" alt="Oil change service - motor oil being poured">
+                </div>
+            </div>
+
+            <!-- Transmission -->
+            <div class="service-section reverse" id="transmission">
+                <div class="service-content">
+                    <h2>🚗 Transmission Service & Repair</h2>
+                    <p class="service-intro">Transmission problems? We handle everything from fluid changes to complete rebuilds.</p>
+                    
+                    <h3>Our Transmission Services Include:</h3>
+                    <ul class="service-list">
+                        <li>Transmission fluid change and flush</li>
+                        <li>Transmission filter replacement</li>
+                        <li>Transmission diagnostics</li>
+                        <li>Clutch repair and replacement (manual)</li>
+                        <li>Transmission repair</li>
+                        <li>Complete transmission rebuild</li>
+                    </ul>
+
+                    <h3>Warning Signs:</h3>
+                    <ul class="service-list warning-signs">
+                        <li>⚠️ Delayed or rough shifting</li>
+                        <li>⚠️ Transmission slipping</li>
+                        <li>⚠️ Burning smell</li>
+                        <li>⚠️ Transmission fluid leaks</li>
+                        <li>⚠️ Check engine or transmission light</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn-primary">Get Transmission Estimate</a>
+                </div>
+                <div class="service-image">
+                    <img src="images/mechanic-working.jpg" alt="Transmission repair service">
+                </div>
+            </div>
+
+            <!-- A/C & Heating -->
+            <div class="service-section" id="ac">
+                <div class="service-content">
+                    <h2>❄️ A/C & Heating Repair</h2>
+                    <p class="service-intro">Stay comfortable year-round with our climate control services.</p>
+                    
+                    <h3>Our A/C & Heating Services Include:</h3>
+                    <ul class="service-list">
+                        <li>A/C performance inspection</li>
+                        <li>Refrigerant recharge (R134a & R1234yf)</li>
+                        <li>A/C compressor repair/replacement</li>
+                        <li>Heater core repair/replacement</li>
+                        <li>Blower motor repair</li>
+                        <li>Climate control diagnostics</li>
+                        <li>Cabin air filter replacement</li>
+                    </ul>
+
+                    <div class="service-pricing">
+                        <h3>Starting At:</h3>
+                        <p class="price">A/C Recharge: $199</p>
+                        <p class="price-note">*Includes leak test and refrigerant.</p>
+                    </div>
+
+                    <a href="contact.html" class="btn-primary">Schedule A/C Service</a>
+                </div>
+                <div class="service-image">
+                    <img src="images/mechanic-working.jpg" alt="A/C and heating repair service">
+                </div>
+            </div>
+
+            <!-- Electrical -->
+            <div class="service-section reverse" id="electrical">
+                <div class="service-content">
+                    <h2>🔋 Electrical System Repair</h2>
+                    <p class="service-intro">From batteries to alternators, we keep your car's electrical system running.</p>
+                    
+                    <h3>Our Electrical Services Include:</h3>
+                    <ul class="service-list">
+                        <li>Battery testing and replacement</li>
+                        <li>Alternator testing and replacement</li>
+                        <li>Starter motor repair/replacement</li>
+                        <li>Electrical system diagnostics</li>
+                        <li>Lighting repair (headlights, taillights)</li>
+                        <li>Fuse and relay replacement</li>
+                        <li>Wiring repair</li>
+                    </ul>
+
+                    <h3>Warning Signs:</h3>
+                    <ul class="service-list warning-signs">
+                        <li>⚠️ Car won't start or slow to crank</li>
+                        <li>⚠️ Dim or flickering lights</li>
+                        <li>⚠️ Battery warning light on</li>
+                        <li>⚠️ Electrical accessories not working</li>
+                        <li>⚠️ Burning smell from engine</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn-primary">Get Electrical Diagnosis</a>
+                </div>
+                <div class="service-image">
+                    <img src="images/engine-diagnostics.jpg" alt="Electrical system repair service">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- All Services CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Don't See Your Service Listed?</h2>
+            <p>We repair all makes and models. Call us for any auto repair need.</p>
+            <a href="contact.html" class="btn-primary btn-large">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Premium Auto Service</h4>
+                    <p>Your trusted neighborhood auto repair shop. ASE certified mechanics with over 15 years of experience.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#brakes">Brake Repair</a></li>
+                        <li><a href="#engine">Engine Diagnostics</a></li>
+                        <li><a href="#oil">Oil Changes</a></li>
+                        <li><a href="#transmission">Transmission</a></li>
+                        <li><a href="#ac">A/C & Heating</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📍 123 Main Street, Your City, State 12345</li>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ service@premiumauto.com</li>
+                        <li>🕐 Mon-Fri: 8AM - 6PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Areas</h4>
+                    <p>Serving Your City and surrounding areas including Downtown, Westside, Eastside, North Hills, and South Valley.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premium Auto Service. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mobileNav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
